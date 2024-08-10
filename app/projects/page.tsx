@@ -80,9 +80,8 @@ const ProjectsPage = () => {
             'Tailwind'
           ]}
           description={[
-            'Developing a company website for Ignite Excellence Health Coaching.',
-            'Website developed using Next.js, Typescript, and Tailwind.',
-            'Backend and deployment TBD.'
+            'Developing a company website for Ignite Excellence Health Coaching using Next.js, Typescript, and Tailwind.',
+            'Deployment TBD.'
           ]}
         />
         <ProjectItem
@@ -98,7 +97,7 @@ const ProjectsPage = () => {
           ]}
           description={[
             'Integrating a computer vision model into a user-friendly web application using Next.js and Typescript.',
-            'Deployed on AWS with a fully automated CI/CD pipeline.'
+            'Deploying on AWS with a fully automated CI/CD pipeline.'
           ]}
         />
         <ProjectItem
@@ -115,7 +114,7 @@ const ProjectsPage = () => {
             "Final project for Stanford's CS107E: Computer Systems from the Ground Up.",
             'Computer monitor displays battleship game in real time as players throw magnetic darts at a board wired with sensors.',
             'Co-created battledart game software in C on Raspberry Pi.',
-            'Co-constructed hardware for gameboard (including sautering and wire configuration).'
+            'Co-constructed hardware for gameboard (including soldering and wire configuration).'
           ]}
         />
     </div>

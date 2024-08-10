@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
           My career passion lies at the intersection of AI and health technology, and I have experience
           in both AI model development and full stack engineering.
         </p>
-        <button className="btn btn-primary mt-6">
+        <button className="btn btn-primary mt-6"  onClick={() => window.location.href = 'mailto:hclay116@gmail.com'}>
           Contact Me
         </button>
       </div>

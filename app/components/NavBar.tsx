@@ -29,13 +29,13 @@ const NavBar = () => {
         </div>
             
         <div className="space-x-4">
-          <Link href="/" className="btn btn-outline">
+          <Link href="/" className="btn btn-outline hover:text-gray-700">
             Home
           </Link>
-          <Link href="/resume" className="btn btn-outline">
+          <Link href="/resume" className="btn btn-outline hover:text-gray-700">
             Resume
           </Link>
-          <Link href="/projects" className="btn btn-outline">
+          <Link href="/projects" className="btn btn-outline hover:text-gray-700">
             Projects
           </Link>
         </div>

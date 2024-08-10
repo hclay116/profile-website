@@ -15,14 +15,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
     <html lang="en">
       <body className={inter.className + " bg-background min-h-screen"}>
         <NavBar />
-        <main className="container mx-auto p-4">
-          {children}
-        </main>
+        <main className="container mx-auto p-4">{children}</main>
       </body>
     </html>
   );

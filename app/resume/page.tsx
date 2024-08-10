@@ -174,7 +174,7 @@ const ResumePage = () => {
       </Section>
 
       <Section title="Skills">
-        <ul className="list-disc list-inside text-gray-600 space-y-2 bg-gray-800 rounded-lg shadow-lg p-8 text-gray-300">
+        <ul className="list-disc list-inside text-gray-200 space-y-2 bg-gray-800 rounded-lg shadow-lg p-8 text-gray-300">
           <li>Programming Languages: Java, Javascript, C, C++, Python, TensorFlow, Typescript</li>
           <li>Tools: React.js, AWS, Next.js, Node.js, MySQL, Git</li>
           <li>Languages: English (native speaker), Mandarin Chinese (elementary proficiency)</li>
