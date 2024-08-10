@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'pastel-blue': '#A2D5F2',
-        'light-blue': '#B0E0E6',
+        'background': '#6C8DFF',
+        'light-blue': '#6C8DFF',
         'cyan': '#00FFFF',
         'gray-800': '#2D2D2D',
         'gray-700': '#3D3D3D',
@@ -21,5 +21,29 @@ const config: Config = {
     },
   },
   plugins: [require('daisyui')],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          'primary': '#4D4D4D', // Pastel blue for primary buttons
+          'primary-focus': '#70C8FF', // Darker pastel blue for focus state
+          'primary-content': '#F7F7F7', // White text on primary buttons
+
+          'secondary': '#00FFFF', // Cyan for secondary buttons
+          'secondary-focus': '#00E5E5', // Darker cyan for focus state
+          'secondary-content': '#ffffff', // White text on secondary buttons
+
+          'accent': '#F7F7F7', // Light gray for accent buttons
+          'accent-focus': '#E5E5E5', // Darker light gray for focus state
+          'accent-content': '#3D3D3D', // Dark gray text on accent buttons
+
+          'neutral': '#3D3D3D', // Dark gray for neutral buttons
+          'neutral-focus': '#2D2D2D', // Darker gray for focus state
+          'neutral-content': '#ffffff', // White text on neutral buttons
+        },
+      },
+    ],
+  },
+
 };
 export default config;
