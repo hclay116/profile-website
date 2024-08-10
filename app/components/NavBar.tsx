@@ -6,11 +6,11 @@ const NavBar = () => {
   return (
     <nav className="bg-background p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-            {/* Logo Links */}
+        {/* Logo Links */}
         <div className="flex space-x-4">
           <Link href="https://github.com/hclay116" passHref>
               <Image
-                src="/images/github-mark.png" // Replace with your GitHub logo path
+                src="/images/github-mark.png"
                 alt="GitHub"
                 width={32}
                 height={32}
@@ -19,7 +19,7 @@ const NavBar = () => {
           </Link>
           <Link href="https://www.linkedin.com/in/hannahclay116" passHref>
               <Image
-                src="/images/in-logo.png" // Replace with your LinkedIn logo path
+                src="/images/in-logo.png"
                 alt="LinkedIn"
                 width={32}
                 height={32}
