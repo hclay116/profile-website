@@ -5,7 +5,7 @@ import React from 'react'
 const NavBar = () => {
   return (
     <nav className="bg-background p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center whitespace-nowrap">
         {/* Logo Links */}
         <div className="flex space-x-4">
           <Link href="https://github.com/hclay116" passHref>

@@ -75,7 +75,7 @@ const ResumePage = () => {
       <div className="max-w-5xl mx-auto p-8">
       <div className="mb-4 flex flex-row justify-between">
         <h1 className="text-5xl text-gray-800 font-bold">Resume</h1>
-        <Link className="btn btn-outline transition duration-300" href="/Clay_Resume.pdf" passHref>
+        <Link className="btn btn-outline transition duration-300 hover:text-gray-700" href="/Clay_Resume.pdf" passHref>
             Download
         </Link>
       </div>

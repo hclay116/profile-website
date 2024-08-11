@@ -12,7 +12,7 @@ const ProjectItem: React.FC<{
   technologies: string[];
 }> = ({ title, type, date, description, image, technologies, link}) => {
   return (
-    <div className="card card-side bg-gray-800 shadow-xl mb-4">
+    <div className="card card-side bg-gray-800 shadow-xl mb-4 overflow-hidden">
     <figure className="w-2/5 flex-shrink-0 overflow-hidden">
       <img
         src={image}
