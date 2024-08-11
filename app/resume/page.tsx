@@ -1,3 +1,16 @@
+/** 
+ * @file resume/page.tsx
+ * 
+ * @description This file contains the resume page including extracted components for the education
+ *              and experience sections, and a download button. 
+ * 
+ * @author Hannah Clay
+ * 
+ * @created 2024-08-11
+ * 
+ * @version 1.0.0
+*/
+
 import React from 'react';
 import Link from 'next/link';
 
@@ -86,8 +99,8 @@ const ResumePage = () => {
           location="Stanford, CA"
           graduationDate="June 2025 (BS), June 2026 (MS)"
           details={[
-            'Bachelor of Science, Masters: Computer Science',
-            'Specialization: Biomedical Computation (BS), Artificial Intelligence (MS)',
+            'Bachelor of Science, Computer Science (Biocomputation Track)',
+            'Master of Science, Computer Science (Artificial Intelligence Track)',
             'Coursework: Programming Abstractions, Computer Systems from the Ground Up, Operating Systems Principles, Mining Massive Datasets, Artificial Intelligence: Principles and Techniques, Intro to Computational Genomics',
           ]}
         />
@@ -112,7 +125,7 @@ const ResumePage = () => {
           title="SIPGA Internship Awardee"
           duration="June 2024-Present"
           description={[
-            'Building a Next.js website application hosted on AWS which serves as a visualization tool for the output of a tissue segmentation ML model'
+            'Building a Next.js website application hosted on AWS serving as a visualization tool for the output of a tissue segmentation AI model'
           ]}
         />
         <ExperienceItem
@@ -121,7 +134,7 @@ const ResumePage = () => {
           title="Software Engineer Intern"
           duration="June-September 2023"
           description={[
-            'Coded a full stack development project for a Dropbox Core team using Python (back end), Typescript, and React'
+            'Executed a full-stack development project using TypeScript, React, and Python'
           ]}
         />
         <ExperienceItem
@@ -130,7 +143,7 @@ const ResumePage = () => {
           title="Curriculum Designer"
           duration="January-June 2023"
           description={[
-            'Co-authored an online course reader for Stanford’s new, global, virtual computer science class'
+            'Co-authored an online course reader for Stanford’s global, virtual computer science class'
           ]}
         />
         <ExperienceItem
@@ -139,7 +152,7 @@ const ResumePage = () => {
           title="Software Engineer Intern"
           duration="June-August 2022"
           description={[
-            'Developed multiple computer vision ML models for an x-ray device using Python and TensorFlow'
+            'Developed multiple computer vision ML models for an X-ray device using Python and TensorFlow'
           ]}
         />
       </Section>
@@ -150,7 +163,7 @@ const ResumePage = () => {
           title="Tutor"
           duration="January 2023-Present"
           description={[
-            'Aid students taking introductory CS classes with assignments and conceptual understanding'
+            'Assist students with introductory CS coursework including assignments and conceptual understanding'
           ]}
         />
         <ExperienceItem
@@ -159,7 +172,7 @@ const ResumePage = () => {
           title="Student"
           duration="June-December 2020"
           description={[
-            'Studied Machine Learning and Science Writing for five weeks which concluded in the co-creation of a song recommendation software based on a Kaggle dataset'
+            'Studied Machine Learning and Science Writing for five weeks culminating in the co-creation of a song recommendation software'
           ]}
         />
         <ExperienceItem
@@ -174,17 +187,17 @@ const ResumePage = () => {
       </Section>
 
       <Section title="Skills">
-        <ul className="list-disc list-inside text-gray-200 space-y-2 bg-gray-800 rounded-lg shadow-lg p-8 text-gray-300">
-          <li>Programming Languages: Java, Javascript, C, C++, Python, TensorFlow, Typescript</li>
-          <li>Tools: React.js, AWS, Next.js, Node.js, MySQL, Git</li>
-          <li>Languages: English (native speaker), Mandarin Chinese (elementary proficiency)</li>
-        </ul>
+        <div className="list-disc list-inside text-gray-200 space-y-2 bg-gray-800 rounded-lg shadow-lg p-8 text-gray-300">
+          <p><b>Programming Languages:</b> Java, Javascript, C, C++, Python, TensorFlow, Typescript</p>
+          <p><b>Tools:</b> React.js, AWS, Next.js, Node.js, MySQL, Git</p>
+          <p><b>Languages:</b> English (native), Mandarin Chinese (intermediate)</p>
+        </div>
       </Section>
         
       <hr className="border-gray-600 mb-6" />
       <section>
         <div className="text-center mb-4">
-          <p>5118 Abbotsbury, New Albany, OH 43054 | +1 614-307-9254 | <a href="mailto:hclay116@gmail.com" className="hover:underline">hclay116@gmail.com</a></p>
+          <p>+1 614-307-9254 | <a href="mailto:hclay116@gmail.com" className="hover:underline">hclay116@gmail.com</a></p>
         </div>
       </section>
       </div>

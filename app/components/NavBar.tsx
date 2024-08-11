@@ -1,3 +1,15 @@
+/** 
+ * @file NavBar.tsx
+ * 
+ * @description This module contains the component for the navigation header.
+ * 
+ * @author Hannah Clay
+ * 
+ * @created 2024-08-11
+ * 
+ * @version 1.0.0
+*/
+
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'

@@ -1,3 +1,16 @@
+/** 
+ * @file projects/page.tsx
+ * 
+ * @description This file contains the code for the projects page including the project card
+ *              component.
+ * 
+ * @author Hannah Clay
+ * 
+ * @created 2024-08-11
+ * 
+ * @version 1.0.0
+*/
+
 import React from 'react';
 import Link from 'next/link';
 
@@ -16,7 +29,7 @@ const ProjectItem: React.FC<{
     <figure className="w-2/5 flex-shrink-0 overflow-hidden">
       <img
         src={image}
-        alt="Movie" />
+        alt={title} />
     </figure>
     <div className="card-body">
       <Link href={link}>

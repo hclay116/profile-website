@@ -1,3 +1,15 @@
+/** 
+ * @file page.tsx
+ * 
+ * @description This file contains 
+ * 
+ * @author Hannah Clay
+ * 
+ * @created 2024-08-11
+ * 
+ * @version 1.0.0
+*/
+
 'use client'
 import Image from 'next/image';
 
@@ -13,9 +25,9 @@ export default function Home() {
           SOFTWARE ENGINEER
         </h2>
         <p className="mt-4 text-white max-w-md">
-          I'm a rising senior and 1st year master's student at Stanford studying CS.
-          My career passion lies at the intersection of AI and health technology, and I have experience
-          in both AI model development and full stack engineering.
+          I'm a coterm student at Stanford studying Computer Science.
+          I have experience in AI and full-stack engineering, but my passion lies in the intersection
+          of AI and medicine.
         </p>
         <button className="btn btn-primary mt-6"  onClick={() => window.location.href = 'mailto:hclay116@gmail.com'}>
           Contact Me
