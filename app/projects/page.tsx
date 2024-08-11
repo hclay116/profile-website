@@ -76,9 +76,10 @@ const ProjectsPage = () => {
             'Tailwind',
           ]}
           description={[
-            'Building an audiobook web application for textbooks using Next.js and Typescript.',
+            'Think Audible for textbooks. This web application will be an audiobook web app geared towards those with learning and/or visual impairments.',
+            'Currently developing with Next.js, Typescript, and Tailwind.',
             'Implementing secure payment processing with Stripe API.',
-            'Designing a responsive UI/UX with Tailwind CSS.'
+            'Backend architecture yet to be determined.'
           ]}
         />
         <ProjectItem
@@ -93,7 +94,8 @@ const ProjectsPage = () => {
             'Tailwind'
           ]}
           description={[
-            'Developing a company website for Ignite Excellence Health Coaching using Next.js, Typescript, and Tailwind.',
+            'Health coaching company website for Ignite Excellence.',
+            'Website built using Next.js, Typescript, and Tailwind.',
             'Deployment TBD.'
           ]}
         />
@@ -109,8 +111,9 @@ const ProjectsPage = () => {
             'Typescript'
           ]}
           description={[
-            'Integrating a computer vision model into a user-friendly web application using Next.js and Typescript.',
-            'Deploying on AWS with a fully automated CI/CD pipeline.'
+            'Web app developed during my internship with A*Star in Singapore.',
+            'This app is a visualization tool for an integrated computer vision model.',
+            'Built using Next.js and Typescript and deployed on AWS with a fully automated CI/CD pipeline.'
           ]}
         />
         <ProjectItem
@@ -125,9 +128,9 @@ const ProjectsPage = () => {
           ]}
           description={[
             "Final project for Stanford's CS107E: Computer Systems from the Ground Up.",
-            'Computer monitor displays battleship game in real time as players throw magnetic darts at a board wired with sensors.',
-            'Co-created battledart game software in C on Raspberry Pi.',
-            'Co-constructed hardware for gameboard (including soldering and wire configuration).'
+            'A computer monitor displays a battleship game in real time as players throw magnetic darts at a board wired with sensors.',
+            'Constructed using C on Raspberry Pi.',
+            'Configured hardware for the gameboard (including soldering and wire configuration).'
           ]}
         />
     </div>
