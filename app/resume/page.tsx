@@ -95,11 +95,11 @@ const ResumePage = () => {
       <Section title="Education">
         <EducationItem
           institution="Stanford University"
-          gpa="GPA: 3.9 (BS), 4.0 (MS)"
+          gpa="GPA: 3.9 (BS)"
           location="Stanford, CA"
           graduationDate="June 2025 (BS), June 2026 (MS)"
           details={[
-            'Bachelor of Science, Computer Science (Biocomputation Track)',
+            'Bachelor of Science, Computer Science (Biomedical Computation Track)',
             'Master of Science, Computer Science (Artificial Intelligence Track)',
             'Coursework: Programming Abstractions, Computer Systems from the Ground Up, Operating Systems Principles, Mining Massive Datasets, Artificial Intelligence: Principles and Techniques, Intro to Computational Genomics',
           ]}
@@ -113,7 +113,6 @@ const ResumePage = () => {
             'Cum Laude (2020, 2021)',
             'National AP Scholar (2020)',
             'National Chinese Honor Society (2020)',
-            'Silver Award, National Chinese Essay Contest (2019, 2020)',
           ]}
         />
       </Section>
@@ -152,7 +151,7 @@ const ResumePage = () => {
           title="Software Engineer Intern"
           duration="June-August 2022"
           description={[
-            'Developed multiple computer vision ML models for an X-ray device using Python and TensorFlow'
+            'Developed multiple computer vision ML models for an x-ray device using Python and TensorFlow'
           ]}
         />
       </Section>

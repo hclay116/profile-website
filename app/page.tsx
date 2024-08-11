@@ -1,7 +1,7 @@
 /** 
  * @file page.tsx
  * 
- * @description This file contains 
+ * @description This file contains the home page.
  * 
  * @author Hannah Clay
  * 
