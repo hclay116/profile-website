@@ -36,19 +36,19 @@ const EducationItem: React.FC<{
   details: string[];
 }> = ({ institution, location, gpa, graduationDate, details}) => {
   return (
-    <div className="mb-4 bg-gray-800 rounded-lg shadow-lg p-8">
-      <div className="flex justify-between text-xl font-bold text-gray-100">
+    <div className="mb-4 bg-white rounded-lg shadow-lg p-8">
+      <div className="flex justify-between text-xl font-bold text-background">
         <h3>{institution}</h3>
         <h3>{location}</h3>
       </div>
       
-      <div className="flex justify-between text-gray-400">
+      <div className="flex justify-between text-gray-500">
         <p>{gpa}</p>
         <p className="italic">{graduationDate}</p>
       </div>
       <div className="mt-2 space-y-1">
         {details.map((detail, index) => (
-          <p key={index} className="text-gray-300">{detail}</p>
+          <p key={index} className="text-gray-600">{detail}</p>
         ))}
       </div>
     </div>
@@ -64,16 +64,16 @@ const ExperienceItem: React.FC<{
   description: string[];
 }> = ({ company, title, duration, description, location}) => {
   return (
-    <div className="mb-4 bg-gray-800 rounded-lg shadow-lg p-8">
-      <div className="flex justify-between text-xl font-bold text-gray-100">
+    <div className="mb-4 bg-white rounded-lg shadow-lg p-8">
+      <div className="flex justify-between text-xl font-bold text-background">
         <h3>{company}</h3>
         <h3>{location}</h3>
       </div>
-      <div className="flex justify-between text-gray-400">
+      <div className="flex justify-between text-gray-500">
         <p>{title}</p>
         <p className="italic">{duration}</p>
       </div>
-      <ul className="list-disc list-inside mt-2 space-y-1 text-gray-300">
+      <ul className="list-disc list-inside mt-2 space-y-1 text-gray-600">
         {description.map((item, index) => (
           <p key={index}>{item}</p>
         ))}
@@ -87,7 +87,7 @@ const ResumePage = () => {
     <div>
       <div className="max-w-5xl mx-auto p-8">
       <div className="mb-4 flex flex-row justify-between">
-        <h1 className="text-5xl text-gray-800 font-bold">Resume</h1>
+        <h1 className="text-5xl font-bold">Resume</h1>
         <Link className="btn btn-outline transition duration-300 hover:text-gray-700" href="/Clay_Resume.pdf" passHref>
             Download
         </Link>
@@ -186,7 +186,7 @@ const ResumePage = () => {
       </Section>
 
       <Section title="Skills">
-        <div className="list-disc list-inside text-gray-200 space-y-2 bg-gray-800 rounded-lg shadow-lg p-8 text-gray-300">
+        <div className="list-disc list-inside text-gray-600 space-y-2 bg-white rounded-lg shadow-lg p-8 text-gray-300">
           <p><b>Programming Languages:</b> Java, Javascript, C, C++, Python, TensorFlow, Typescript</p>
           <p><b>Tools:</b> React.js, AWS, Next.js, Node.js, MySQL, Git</p>
           <p><b>Languages:</b> English (native), Mandarin Chinese (intermediate)</p>

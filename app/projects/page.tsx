@@ -25,7 +25,7 @@ const ProjectItem: React.FC<{
   technologies: string[];
 }> = ({ title, type, date, description, image, technologies, link}) => {
   return (
-    <div className="card card-side bg-gray-800 shadow-xl mb-4 overflow-hidden">
+    <div className="card card-side bg-white shadow-xl mb-4 overflow-hidden">
     <figure className="w-2/5 flex-shrink-0 overflow-hidden">
       <img
         src={image}
@@ -33,21 +33,21 @@ const ProjectItem: React.FC<{
     </figure>
     <div className="card-body">
       <Link href={link}>
-        <h2 className="card-title hover:text-gray-300">{title}</h2>
+        <h2 className="card-title text-background hover:font-bold">{title}</h2>
       </Link>
-      <div className='flex flex-row justify-between text-background'>
+      <div className='flex flex-row justify-between text-gray-500'>
         <p>{type}</p>
         <p>{date}</p>
       </div>
       
       {description.map((item, index) => (
-        <p key={index}>{item}</p>
+        <p className="text-gray-600" key={index}>{item}</p>
       ))}
       <div className="card-actions justify-end">
         {technologies.map((tech, index) => (
           <span 
             key={index} 
-            className="badge badge-lg badge-outline"
+            className="badge badge-lg badge-outline text-background"
           >
             {tech}
           </span>
@@ -62,7 +62,7 @@ const ProjectItem: React.FC<{
 const ProjectsPage = () => {
   return (
     <div className="max-w-5xl mx-auto p-8 text-gray-100 min-h-screen">
-      <h1 className="text-5xl font-bold text-gray-800 mb-8">Projects</h1>
+      <h1 className="text-5xl font-bold mb-8">Projects</h1>
       <hr className="border-gray-600 mb-6" />
         <ProjectItem
           title="Letter Lecture"
