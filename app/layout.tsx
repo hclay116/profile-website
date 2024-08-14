@@ -9,11 +9,13 @@
  * 
  * @version 1.0.0
 */
-
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+
 import NavBar from "./components/NavBar";
+
+import { Analytics } from "@vercel/analytics/react"
+import { Inter } from "next/font/google";
+import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,9 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " bg-background min-h-screen"}>
+      <body className={inter.className + " bg-background min-h-screen"}> 
         <NavBar />
         <main className="container mx-auto p-4">{children}</main>
+        <Analytics/>
       </body>
     </html>
   );
