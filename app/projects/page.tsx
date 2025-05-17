@@ -68,7 +68,7 @@ const ProjectsPage = () => {
           title="GridFlow"
           type="RL and CV"
           date="January-March 2025"
-          link="\projects"
+          link="https://github.com/hclay116/Gridflow"
           image="images/smart-traffic.png"
           technologies={[
             'Python',
@@ -82,7 +82,7 @@ const ProjectsPage = () => {
         <ProjectItem
           title="CoST: Code Switching TranslaDon Data AugmentaDon Method"
           type="NLP and ML"
-          link="\projects"
+          link="https://github.com/tracyywei/cs224n-codeswitch"
           image="images/CoST-logo.png"
           date="January-March 2025"
           technologies={[
