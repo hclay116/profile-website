@@ -8,7 +8,7 @@
  *
  * @created 2024-08-11
  *
- * @version 1.0.0
+ * @version 2.0.0
  */
 
 import React from "react";
@@ -114,11 +114,11 @@ const ResumePage = () => {
         <Section title="Education">
           <EducationItem
             institution="Stanford University"
-            gpa={["GPA: 3.9", ""]}
+            gpa={["GPA: 3.91", "GPA: 3.828"]}
             location="Stanford, CA"
             graduationDate={["June 2025", "June 2026"]}
             details={[
-              "Coursework: Programming Abstractions, Computer Systems from the Ground Up, Operating Systems Principles, Mining Massive Datasets, Artificial Intelligence: Principles and Techniques, Intro to Computational Genomics",
+              "Coursework: Mining Massive Datasets, AI: Principles and Techniques, NLP with Deep Learning",
             ]}
             degree={[
               "Bachelor of Science, CS (Biomedical Computation Track)",
@@ -143,19 +143,19 @@ const ResumePage = () => {
             company="Bioinformatics Institute, A*STAR"
             location="Singapore"
             title="SIPGA Internship Awardee"
-            duration="June 2024-Present"
+            duration="June-September 2024"
             description={[
-              "Developed a Next.js web application from the ground up, integrating a tissue segmentation AI model with a custom visualization tool.",
-              "Integrated the application with AWS services, including Amplify, DynamoDB, S3, and SageMaker, to manage hosting, the ML pipeline, and backend database operations."
+              "▪ Developed a Next.js web application from the ground up, integrating a tissue segmentation AI model with a custom visualization tool.",
+              "▪ Integrated the application with AWS services, including Amplify, DynamoDB, S3, and SageMaker, to manage hosting, the ML pipeline, and backend database operations."
             ]}
           />
           <ExperienceItem
             company="Black LaIR"
             location="Stanford, CA"
             title="Tutor"
-            duration="January 2023-Present"
+            duration="January 2023-December 2024"
             description={[
-              "Assist students with introductory CS coursework including assignments and conceptual understanding.",
+              "▪ Assist students with introductory CS coursework including assignments and conceptual understanding.",
             ]}
           />
           <ExperienceItem
@@ -164,8 +164,8 @@ const ResumePage = () => {
             title="Software Engineer Intern"
             duration="June-September 2023"
             description={[
-              "Implemented a full-stack development project for Dropbox Enterprise, enhancing functionality by implementing bulk actions using TypeScript, React, and Python for the backend.",
-              "Contributed to the redesign and migration of Dropbox Enterprise Members page collaborating closely with the Design team and product manager."
+              "▪ Implemented a full-stack development project for Dropbox Enterprise, enhancing functionality by implementing bulk actions using TypeScript, React, and Python for the backend.",
+              "▪ Contributed to the redesign and migration of Dropbox Enterprise Members page collaborating closely with the Design team and product manager."
             ]}
           />
           <ExperienceItem
@@ -174,7 +174,7 @@ const ResumePage = () => {
             title="Curriculum Designer"
             duration="January-June 2023"
             description={[
-              "Co-authored an online course reader for Stanford’s global, virtual computer science class from scratch, creating original and engaging content and examples to illustrate key concepts for students worldwide.",
+              "▪ Co-authored an online course reader for Stanford’s global, virtual computer science class from scratch, creating original and engaging content and examples to illustrate key concepts for students worldwide.",
             ]}
           />
           <ExperienceItem
@@ -183,9 +183,9 @@ const ResumePage = () => {
             title="Software Engineer Intern"
             duration="June-August 2022"
             description={[
-              "Developed multiple computer vision models for an X-ray device using Python and TensorFlow, including key point detection and image segmentation models.",
-              "Managed the entire machine learning pipeline, from data collection and annotation to preprocessing, model construction, and research.",
-              "Conducted extensive hyperparameter tuning to optimize model performance and ensure accurate results."
+              "▪ Developed multiple computer vision models for an X-ray device using Python and TensorFlow, including key point detection and image segmentation models.",
+              "▪ Managed the entire machine learning pipeline, from data collection and annotation to preprocessing, model construction, and research.",
+              "▪ Conducted extensive hyperparameter tuning to optimize model performance and ensure accurate results."
             ]}
           />
         </Section>
