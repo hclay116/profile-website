@@ -8,7 +8,7 @@
  * 
  * @created 2024-08-11
  * 
- * @version 1.0.0
+ * @version 2.0.0
 */
 
 import React from 'react';
@@ -65,38 +65,32 @@ const ProjectsPage = () => {
       <h1 className="text-5xl font-bold mb-8">Projects</h1>
       <hr className="border-gray-600 mb-6" />
         <ProjectItem
-          title="Letter Lecture"
-          type="Full Stack Development"
-          date="Coming Soon"
-          link="\projects"
-          image="images/letter-lecture.jpeg"
+          title="GridFlow"
+          type="RL and CV"
+          date="January-March 2025"
+          link="https://github.com/hclay116/Gridflow"
+          image="images/smart-traffic.png"
           technologies={[
-            'Next.js',
-            'Typescript',
-            'Tailwind',
+            'Python',
+            'PyTorch',
+            'SUMO',
           ]}
           description={[
-            'Think Audible for textbooks. This web application will be an audiobook web app geared towards those with learning and/or visual impairments.',
-            'Currently developing with Next.js, Typescript, and Tailwind.',
-            'Implementing secure payment processing with Stripe API.',
-            'Backend architecture yet to be determined.'
+            'GridFlow is a smart traffic light system that optimizes traffic at a single intersection using reinforcement learning. The system employs YOLOv5 for real-time detection of vehicles and pedestrians. Q-learning and Deep Q-Network (DQN) algorithms dynamically adjust traffic light timings based on current conditions.'
           ]}
         />
         <ProjectItem
-          title="Ignite Excellence Health Coaching Website"
-          type="Full Stack Development"
-          link="\projects"
-          image="images/coming-soon.png"
-          date="Coming Soon"
+          title="CoST: Code Switching TranslaDon Data AugmentaDon Method"
+          type="NLP and ML"
+          link="https://github.com/tracyywei/cs224n-codeswitch"
+          image="images/CoST-logo.png"
+          date="January-March 2025"
           technologies={[
-            'Next.js',
-            'Typescript',
-            'Tailwind'
+            'Python',
+            'PyTorch'
           ]}
           description={[
-            'Health coaching company website for Ignite Excellence.',
-            'Website built using Next.js, Typescript, and Tailwind.',
-            'Deployment TBD.'
+            'CoST is a data augmentation method for code-switching translation tasks. It uses a fine-tuned mT5 model to generate synthetic code-switched sentences. The approach leverages machine translation to enhance the diversity and quality of training data. In evaluation, it more than doubled the accuracy of CoSDA-generated text on the XNLI benchmark.'
           ]}
         />
         <ProjectItem
@@ -104,16 +98,15 @@ const ProjectsPage = () => {
           type="Full Stack Development"
           date="June-September 2024"
           image="images/he2-logo.png"
-          link="https://main.d35nwumcsaolbg.amplifyapp.com"
+          link="\projects"
           technologies={[
             'AWS',
             'Next.js',
             'Typescript'
           ]}
           description={[
-            'Web app developed during my internship with A*Star in Singapore.',
-            'This app is a visualization tool for an integrated computer vision model.',
-            'Built using Next.js and Typescript and deployed on AWS with a fully automated CI/CD pipeline.'
+            'Users upload H&E-stained histological images to be run thorugh a CV model which highlights potentially cancerous cells. The visualiation tool for the output includes zoom, scrolling, and a sliding window. It is deployed on AWS with a fully automated CI/CD pipeline, integrating services like Amplify, DynamoDB, S3, and SageMaker to manage hosting, the ML pipeline, and backend operations. ',
+            '\nLast updated May 2025: the website is under construction by A*STAR in Singapore. '
           ]}
         />
         <ProjectItem
@@ -127,10 +120,7 @@ const ProjectsPage = () => {
             'Raspberry Pi',
           ]}
           description={[
-            "Final project for Stanford's CS107E: Computer Systems from the Ground Up.",
-            'A computer monitor displays a battleship game in real time as players throw magnetic darts at a board wired with sensors.',
-            'Constructed using C on Raspberry Pi.',
-            'Configured hardware for the gameboard (including soldering and wire configuration).'
+            "Battledart is an interactive Battleship game using C on a Raspberry Pi. Players throw magnetic darts at a custom-built 8x8 sensor grid, which detects hits in real time and displays the game on a computer monitor. The project involved configuring hardware, soldering connections, and integrating software to link the physical board with the digital game interface. All graphics were created from scratch."
           ]}
         />
     </div>
