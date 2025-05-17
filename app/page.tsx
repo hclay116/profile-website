@@ -19,7 +19,7 @@ export default function Home() {
     <div className="flex flex-col md:flex-row items-center justify-center max-w-4xl mx-auto">
       <div className="mr-8">
         <h1 className="text-5xl font-bold text-white">
-          HI. I'm Hannah.
+          Hi. I'm Hannah.
         </h1>
         <h2 className="text-2xl text-gray-600 mt-2">
           SOFTWARE ENGINEER
