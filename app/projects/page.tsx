@@ -23,13 +23,22 @@ const ProjectItem: React.FC<{
   link: string;
   description: string[];
   technologies: string[];
-}> = ({ title, type, date, description, image, technologies, link}) => {
+  video?: string;
+}> = ({ title, type, date, description, image, technologies, link, video}) => {
   return (
     <div className="card card-side bg-white shadow-xl mb-4 overflow-hidden">
     <figure className="w-2/5 flex-shrink-0 overflow-hidden">
-      <img
+      {!video && <img
         src={image}
-        alt={title} />
+        alt={title} />}
+      {video && <iframe
+        src={video}
+        title={title}
+        width="640" 
+        height="480" 
+        allow="autoplay"
+        allowFullScreen
+      ></iframe>}
     </figure>
     <div className="card-body">
       <Link href={link}>
@@ -80,7 +89,7 @@ const ProjectsPage = () => {
           ]}
         />
         <ProjectItem
-          title="CoST: Code Switching TranslaDon Data AugmentaDon Method"
+          title="CoST: Code Switching Translation Data Augmentation Method"
           type="NLP and ML"
           link="https://github.com/tracyywei/cs224n-codeswitch"
           image="images/CoST-logo.png"
@@ -99,6 +108,7 @@ const ProjectsPage = () => {
           date="June-September 2024"
           image="images/he2-logo.png"
           link="\projects"
+          video="https://drive.google.com/file/d/1tnsDf4bTY25vBjxlI5wX37EcpKyF0OMZ/preview"
           technologies={[
             'AWS',
             'Next.js',
