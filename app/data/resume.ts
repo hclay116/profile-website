@@ -6,7 +6,7 @@ export const educationData = [
       "Bachelor of Science, CS (Biomedical Computation Track)",
       "Master of Science, CS (AI Track)"
     ],
-    gpas: ["GPA: 3.91", "GPA: 3.828"],
+    gpas: ["GPA: 3.92", "GPA: 3.89"],
     dates: ["June 2025", "June 2026"],
     details: [
       "Coursework: Mining Massive Datasets, AI: Principles and Techniques, NLP with Deep Learning, Continuous Mathematical Methods with an Emphasis on Machine Learning"
