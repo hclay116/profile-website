@@ -11,7 +11,7 @@ const ResumeSection = () => {
           <p className="text-text-secondary text-lg">Experience & Education</p>
         </div>
 
-        {/* Education and Experience - Stacked for better balance */}
+        {/* Education and Experience */}
         <div className="space-y-16">
           {/* Education Section */}
           <div>

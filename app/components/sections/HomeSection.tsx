@@ -43,10 +43,11 @@ const HomeSection = () => {
                 Contact Me
               </Button>
               <Button 
-                onClick={scrollToResume}
                 variant="outline"
               >
-                View Resume
+                 <a href="/Clay_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                     View Resume
+                </a>
               </Button>
             </div>
           </div>
@@ -60,7 +61,7 @@ const HomeSection = () => {
                 alt="Hannah's Headshot"
                 width={400} 
                 height={400} 
-                className="relative rounded-full border-4 border-primary/20 shadow-2xl animate-float"
+                className="relative rounded-full border-4 border-primary/20 shadow-2xl"
               />
             </div>
           </div>
