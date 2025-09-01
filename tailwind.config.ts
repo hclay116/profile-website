@@ -9,14 +9,66 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'background': '#6C8DFF',
-        'light-blue': '#6C8DFF',
-        'cyan': '#00FFFF',
-        'gray-800': '#2D2D2D',
-        'gray-700': '#3D3D3D',
-        'gray-600': '#4D4D4D',
-        'gray-500': '#7D7D7D',
-        'light-gray': '#F7F7F7',
+        'background': '#f0f8ff', // Light sky blue
+        'surface': '#e6f3ff', // Lighter periwinkle
+        'primary': '#059669', // Softer emerald green
+        'secondary': '#10b981', // Softer green
+        'accent': '#3b82f6', // Sky blue
+        'blue-primary': '#3b82f6', // Sky blue
+        'blue-secondary': '#60a5fa', // Lighter sky blue
+        'blue-accent': '#93c5fd', // Periwinkle
+        'muted': '#64748b',
+        'card': 'rgba(255, 255, 255, 0.9)',
+        'card-border': 'rgba(5, 150, 105, 0.2)', // Updated to match new primary
+        'text-primary': '#1e293b',
+        'text-secondary': '#475569',
+        'text-muted': '#64748b',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.6s ease-in-out',
+        'slide-up': 'slideUp 0.8s ease-out',
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'gradient': 'gradient 8s ease infinite',
+        'morph': 'morph 8s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(30px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        gradient: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          },
+        },
+        morph: {
+          '0%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' },
+          '50%': { borderRadius: '30% 60% 70% 40%/50% 60% 30% 60%' },
+          '100%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' },
+        },
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'biotech-gradient': 'linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 50%, #dbeafe 100%)',
+        'card-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 248, 255, 0.9) 100%)',
+      },
+      backdropBlur: {
+        xs: '2px',
       },
     },
   },
@@ -24,26 +76,31 @@ const config: Config = {
   daisyui: {
     themes: [
       {
-        mytheme: {
-          'primary': '#4D4D4D', // Pastel blue for primary buttons
-          'primary-focus': '#70C8FF', // Darker pastel blue for focus state
-          'primary-content': '#F7F7F7', // White text on primary buttons
+        biotech: {
+          'primary': '#059669',
+          'primary-focus': '#047857',
+          'primary-content': '#ffffff',
 
-          'secondary': '#00FFFF', // Cyan for secondary buttons
-          'secondary-focus': '#00E5E5', // Darker cyan for focus state
-          'secondary-content': '#ffffff', // White text on secondary buttons
+          'secondary': '#10b981',
+          'secondary-focus': '#059669',
+          'secondary-content': '#ffffff',
 
-          'accent': '#F7F7F7', // Light gray for accent buttons
-          'accent-focus': '#E5E5E5', // Darker light gray for focus state
-          'accent-content': '#3D3D3D', // Dark gray text on accent buttons
+          'accent': '#3b82f6',
+          'accent-focus': '#2563eb',
+          'accent-content': '#ffffff',
 
-          'neutral': '#3D3D3D', // Dark gray for neutral buttons
-          'neutral-focus': '#2D2D2D', // Darker gray for focus state
-          'neutral-content': '#ffffff', // White text on neutral buttons
+          'neutral': '#e6f3ff',
+          'neutral-focus': '#dbeafe',
+          'neutral-content': '#1e293b',
+
+          'base-100': '#f0f8ff',
+          'base-200': '#e6f3ff',
+          'base-300': '#dbeafe',
+          'base-content': '#1e293b',
         },
       },
     ],
   },
-
 };
+
 export default config;

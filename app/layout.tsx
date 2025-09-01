@@ -11,7 +11,7 @@
 */
 import "./globals.css";
 
-import NavBar from "./components/NavBar";
+import NavBar from "./components/layout/NavBar";
 
 import { Analytics } from "@vercel/analytics/react"
 import { Inter } from "next/font/google";
@@ -20,8 +20,8 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hannah Clay's Profile",
-  description: "Hannah Clay's virtual resume",
+  title: "Hannah Clay - Software Engineer",
+  description: "Software Engineer specializing in computer vision, machine learning, and full-stack development",
 };
 
 export default function RootLayout({
@@ -30,10 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className + " bg-background min-h-screen"}> 
+    <html lang="en" data-theme="biotech">
+      <body className={inter.className + " animated-bg min-h-screen"}> 
         <NavBar />
-        <main className="container mx-auto p-4">{children}</main>
+        <main className="w-full">{children}</main>
         <Analytics/>
       </body>
     </html>
