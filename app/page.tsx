@@ -12,9 +12,9 @@
 
 'use client';
 
-import HomeSection from './components/HomeSection';
-import ResumeSection from './components/ResumeSection';
-import ProjectsSection from './components/ProjectsSection';
+import HomeSection from './components/sections/HomeSection';
+import ResumeSection from './components/sections/ResumeSection';
+import ProjectsSection from './components/sections/ProjectsSection';
 
 export default function Home() {
   return (

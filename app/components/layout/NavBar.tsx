@@ -28,14 +28,14 @@ const NavBar = () => {
     <nav className="fixed top-0 w-full z-50 glass border-b border-card-border">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo Links */}
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 items-center">
           <Link href="https://github.com/hclay116" passHref className="group">
               <Image
                 src="/images/github-mark.png"
                 alt="GitHub"
-                width={32}
-                height={32}
-                className="hover:opacity-75 transition-all duration-300 group-hover:scale-110 brightness-0"
+                width={39}
+                height={39}
+                className="hover:opacity-75 transition-all duration-300 group-hover:scale-110 brightness-0 opacity-70"
               />
           </Link>
           <Link href="https://www.linkedin.com/in/hannahclay116" passHref className="group">
@@ -44,7 +44,7 @@ const NavBar = () => {
                 alt="LinkedIn"
                 width={32}
                 height={32}
-                className="hover:opacity-75 transition-all duration-300 group-hover:scale-110 brightness-0"
+                className="hover:opacity-75 transition-all duration-300 group-hover:scale-110 brightness-0 opacity-70"
               />
           </Link>
         </div>

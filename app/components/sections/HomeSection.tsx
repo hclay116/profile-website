@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import AnimatedBackground from './AnimatedBackground';
-import Button from './Button';
+import AnimatedBackground from '../ui/AnimatedBackground';
+import Button from '../ui/Button';
 
 const HomeSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,12 +28,12 @@ const HomeSection = () => {
               <span className="gradient-text">Hi. I'm Hannah.</span>
             </h1>
             <h2 className="text-2xl lg:text-3xl text-secondary mb-6 font-light">
-              AI Biotech Engineer
+              Software Engineer
             </h2>
             <p className="text-lg text-text-secondary max-w-2xl mb-8 leading-relaxed">
-              I'm a coterm student at Stanford studying Computer Science with a passion for 
-              the intersection of AI and medicine. I specialize in computer vision, machine learning, 
-              and full-stack development for biotech applications.
+            I'm a coterm student at Stanford studying Computer Science. 
+            I have experience in AI and full-stack engineering, 
+            but my passion lies in the intersection of AI and medicine.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 

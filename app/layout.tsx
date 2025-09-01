@@ -11,7 +11,7 @@
 */
 import "./globals.css";
 
-import NavBar from "./components/NavBar";
+import NavBar from "./components/layout/NavBar";
 
 import { Analytics } from "@vercel/analytics/react"
 import { Inter } from "next/font/google";
@@ -20,8 +20,8 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hannah Clay - AI Biotech Engineer",
-  description: "AI Biotech Engineer specializing in computer vision, machine learning, and full-stack development",
+  title: "Hannah Clay - Software Engineer",
+  description: "Software Engineer specializing in computer vision, machine learning, and full-stack development",
 };
 
 export default function RootLayout({
