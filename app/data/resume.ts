@@ -3,8 +3,8 @@ export const educationData = [
     institution: "Stanford University",
     location: "Stanford, CA",
     degrees: [
-      "Bachelor of Science, CS",
-      "Master of Science, CS"
+      "Bachelor of Science, CS (Biomedical Computation Track)",
+      "Master of Science, CS (AI Track)"
     ],
     gpas: ["GPA: 3.91", "GPA: 3.828"],
     dates: ["June 2025", "June 2026"],
