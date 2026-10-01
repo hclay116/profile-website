@@ -8,8 +8,8 @@ export const educationData = [
     ],
     dates: ["June 2026", "June 2025"],
     details: [
-      "Bio/Health Coursework: Representations & Algorithms for Computational Molecular Biology, Biodesign Fundamentals, Large-Scale Neural Network Modeling for Neuroscience",
-      "AI/ML Coursework: Mining Massive Datasets, AI: Principles and Techniques, NLP with Deep Learning, Deep Learning for Computer Vision, Reinforcement Learning, Continuous Mathematical Methods with an Emphasis on Machine Learning"
+      "Bio/Health Coursework: Representations & Algorithms for Computational Molecular Biology, Foundations of Computational Human Genomics, Modeling Biomedical Systems, Biodesign Fundamentals, Large-Scale Neural Network Modeling for Neuroscience, Biochemistry & Molecular Biology, Genetics, Cell Biology, Physiology, Introduction to Bioengineering, Human Anatomy, Foundations of Bioethics",
+      "AI/ML Coursework: Mining Massive Datasets, AI: Principles and Techniques, NLP with Deep Learning, Deep Learning for Computer Vision, Reinforcement Learning, Deep Reinforcement Learning, Decision Making Under Uncertainty, Conversational Virtual Assistants with Deep Learning, Continuous Mathematical Methods with an Emphasis on Machine Learning"
     ]
   }
 ];
