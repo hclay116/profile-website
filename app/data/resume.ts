@@ -10,23 +10,20 @@ export const educationData = [
     details: [
       "Coursework: Mining Massive Datasets, AI: Principles and Techniques, NLP with Deep Learning, Deep Learning for Computer Vision, Continuous Mathematical Methods with an Emphasis on Machine Learning"
     ]
-  },
-  {
-    institution: "Columbus Academy",
-    location: "Gahanna, OH",
-    details: [
-      "High School Diploma",
-      "June 2021",
-      "Cum Laude (2020, 2021)",
-      "National AP Scholar (2020)",
-      "National Chinese Honor Society (2020)"
-    ]
   }
 ];
 
-export const experienceData = [
+export const experienceData: Array<{
+  company: string;
+  location: string;
+  title: string;
+  duration: string;
+  description: string[];
+  tags?: string[];
+}> = [
   {
     company: "Zingage",
+    tags: ["Healthcare AI", "Voice Agents"],
     location: "New York, NY",
     title: "AI Engineer",
     duration: "June 2026-Present",
@@ -36,6 +33,7 @@ export const experienceData = [
   },
   {
     company: "Stanford Language Data and Reasoning Lab",
+    tags: ["Research", "Knowledge Graphs"],
     location: "Stanford, CA",
     title: "Graduate Research Assistant",
     duration: "October 2025-April 2026",
@@ -56,6 +54,7 @@ export const experienceData = [
   },
   {
     company: "Bioinformatics Institute, A*STAR",
+    tags: ["Bioinformatics", "Digital Pathology"],
     location: "Singapore",
     title: "SIPGA Internship Awardee",
     duration: "June-September 2024",
@@ -85,6 +84,7 @@ export const experienceData = [
   },
   {
     company: "OXOS Medical",
+    tags: ["Medical Devices", "Computer Vision"],
     location: "Atlanta, GA",
     title: "Software Engineer Intern",
     duration: "June-August 2022",
