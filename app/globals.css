@@ -115,7 +115,6 @@ html {
     transition: none;
   }
 
-  .animate-ecg,
   .animate-pulse-slow {
     animation: none;
   }

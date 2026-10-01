@@ -20,7 +20,6 @@ const ResumeSection = () => {
               index="02"
               label="Experience"
               title="Experience"
-              subtitle="From X-ray computer vision to production voice agents in home care."
             />
           </Reveal>
 

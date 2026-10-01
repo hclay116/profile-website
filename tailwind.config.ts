@@ -31,7 +31,6 @@ const config: Config = {
         'fade-in': 'fadeIn 0.8s ease-out both',
         'slide-up': 'slideUp 0.8s ease-out both',
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'ecg': 'ecg 3.2s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -41,10 +40,6 @@ const config: Config = {
         slideUp: {
           '0%': { transform: 'translateY(24px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        ecg: {
-          '0%': { strokeDashoffset: '600' },
-          '100%': { strokeDashoffset: '0' },
         },
       },
     },

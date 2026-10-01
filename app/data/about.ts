@@ -17,6 +17,6 @@ export const focusAreas = [
   {
     code: '04 · care',
     title: 'Clinical AI agents',
-    description: 'Voice and recommendation systems that take load off caregivers and get patients the right care.',
+    description: 'Voice AI and recommendation systems that expand health care access for those in need of in house treatment.',
   },
 ];

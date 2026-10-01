@@ -14,7 +14,6 @@ import HomeSection from './components/sections/HomeSection';
 import AboutSection from './components/sections/AboutSection';
 import ResumeSection from './components/sections/ResumeSection';
 import ProjectsSection from './components/sections/ProjectsSection';
-import ContactSection from './components/sections/ContactSection';
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
       <AboutSection />
       <ResumeSection />
       <ProjectsSection />
-      <ContactSection />
     </div>
   );
 }

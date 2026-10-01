@@ -12,7 +12,6 @@ export { default as HomeSection } from './sections/HomeSection';
 export { default as AboutSection } from './sections/AboutSection';
 export { default as ResumeSection } from './sections/ResumeSection';
 export { default as ProjectsSection } from './sections/ProjectsSection';
-export { default as ContactSection } from './sections/ContactSection';
 
 // Card Components
 export { default as EducationCard } from './cards/EducationCard';

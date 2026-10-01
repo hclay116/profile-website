@@ -11,7 +11,7 @@ const AboutSection = () => {
           <SectionHeader
             index="01"
             label="About"
-            title={<>Where biology meets <span className="gradient-text">computation</span></>}
+            title={<>My experience, <span className="gradient-text">my passions</span></>}
           />
         </Reveal>
 
@@ -35,8 +35,8 @@ const AboutSection = () => {
                 I studied Computer Science at Stanford on the <span className="text-ink">Biomedical Computation</span> track
                 for my BS and the <span className="text-ink">Artificial Intelligence</span> track for my MS. I&apos;ve built
                 computer vision models for an X-ray device, tissue segmentation tooling for digital pathology, and
-                production LLM voice agents &mdash; and I want to spend my career building technology that directly
-                improves human health.
+                production LLM voice agents. I am building a career improving public health. These are my core areas
+                of interest.
               </p>
             </Reveal>
 
