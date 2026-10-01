@@ -3,33 +3,32 @@ interface EducationCardProps {
   location: string;
   details: string[];
   degrees?: string[];
-  gpas?: string[];
   dates?: string[];
 }
 
-const EducationCard = ({ institution, location, details, degrees, gpas, dates }: EducationCardProps) => {
+const EducationCard = ({ institution, location, details, degrees, dates }: EducationCardProps) => {
   return (
-    <div className="glass rounded-xl p-6 card-hover">
-      <div className="flex justify-between items-start mb-4">
-        <h4 className="text-xl font-bold text-text-primary">{institution}</h4>
-        <span className="text-secondary text-sm">{location}</span>
+    <div className="panel card-hover h-full p-6">
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+        <h4 className="font-display text-xl font-semibold text-ink">{institution}</h4>
+        <span className="text-xs text-muted">{location}</span>
       </div>
-      <div className="space-y-2 text-text-secondary">
+      <div className="space-y-3 text-sm text-muted">
         {degrees ? (
           degrees.map((degree, index) => (
-            <div key={index} className="flex justify-between">
-              <p>{degree}</p>
-              <p className="text-sm">{gpas?.[index] && `${gpas[index]} | `}{dates?.[index]}</p>
+            <div key={index} className="flex flex-wrap justify-between gap-x-4">
+              <p className="text-ink/90">{degree}</p>
+              <p className="font-mono text-xs text-teal">{dates?.[index]}</p>
             </div>
           ))
         ) : (
-          <div className="flex justify-between">
-            <p>{details[0]}</p>
-            <p className="text-sm">{details[1]}</p>
+          <div className="flex flex-wrap justify-between gap-x-4">
+            <p className="text-ink/90">{details[0]}</p>
+            <p className="font-mono text-xs text-teal">{details[1]}</p>
           </div>
         )}
         {details.slice(degrees ? 0 : 2).map((detail, index) => (
-          <p key={index} className="text-sm">{detail}</p>
+          <p key={index}>{detail}</p>
         ))}
       </div>
     </div>

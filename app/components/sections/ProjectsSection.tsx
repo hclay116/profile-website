@@ -1,18 +1,21 @@
 import ProjectCard from '../cards/ProjectCard';
+import Reveal from '../ui/Reveal';
+import SectionHeader from '../ui/SectionHeader';
 import { projectsData } from '../../data/projects';
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="min-h-screen py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold gradient-text mb-4">Projects</h2>
-          <p className="text-text-secondary text-lg">AI, ML, and Full-Stack Development</p>
-        </div>
+    <section id="projects" className="py-24">
+      <div className="container mx-auto max-w-6xl px-6">
+        <Reveal>
+          <SectionHeader index="05" label="Projects" title="Projects" subtitle="AI, ML, and Full-Stack Development" />
+        </Reveal>
 
-        <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+        <div className="grid gap-6 md:grid-cols-2">
           {projectsData.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+            <Reveal key={index} delay={(index % 2) * 80}>
+              <ProjectCard {...project} />
+            </Reveal>
           ))}
         </div>
       </div>

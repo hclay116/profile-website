@@ -3,45 +3,66 @@ export const educationData = [
     institution: "Stanford University",
     location: "Stanford, CA",
     degrees: [
-      "Bachelor of Science, CS (Biomedical Computation Track)",
-      "Master of Science, CS (AI Track)"
+      "Master of Science, Computer Science (Artificial Intelligence Track)",
+      "Bachelor of Science, Computer Science (Computational Biology Track)"
     ],
-    gpas: ["GPA: 3.92", "GPA: 3.89"],
-    dates: ["June 2025", "June 2026"],
+    dates: ["June 2026", "June 2025"],
     details: [
-      "Coursework: Mining Massive Datasets, AI: Principles and Techniques, NLP with Deep Learning, Continuous Mathematical Methods with an Emphasis on Machine Learning"
-    ]
-  },
-  {
-    institution: "Columbus Academy",
-    location: "Gahanna, OH",
-    details: [
-      "GPA: 4.13 Unweighted, 4.42 Weighted",
-      "June 2021",
-      "Cum Laude (2020, 2021)",
-      "National AP Scholar (2020)",
-      "National Chinese Honor Society (2020)"
+      "Bio/Health Coursework: Representations & Algorithms for Computational Molecular Biology, Foundations of Computational Human Genomics, Modeling Biomedical Systems, Biodesign Fundamentals, Large-Scale Neural Network Modeling for Neuroscience, Biochemistry & Molecular Biology, Genetics, Cell Biology, Physiology, Introduction to Bioengineering, Human Anatomy, Foundations of Bioethics",
+      "AI/ML Coursework: Mining Massive Datasets, AI: Principles and Techniques, NLP with Deep Learning, Deep Learning for Computer Vision, Reinforcement Learning, Deep Reinforcement Learning, Decision Making Under Uncertainty, Conversational Virtual Assistants with Deep Learning, Continuous Mathematical Methods with an Emphasis on Machine Learning"
     ]
   }
 ];
 
-export const experienceData = [
+export const experienceData: Array<{
+  company: string;
+  location: string;
+  title: string;
+  duration: string;
+  description: string[];
+  tags?: string[];
+}> = [
+  {
+    company: "Zingage",
+    tags: ["Healthcare AI", "Voice Agents"],
+    location: "New York, NY",
+    title: "AI Engineer",
+    duration: "June 2026-Present",
+    description: [
+      "• Co-developing core product AI agents, including voice and ranking/recommendation systems for home care",
+      "• Building an in-house audio evaluation set for voice AI agents",
+      "• Owning the rollout of a new ranking/recommendation system, from design iterations and shadow runs to A/B testing and full rollout"
+    ]
+  },
+  {
+    company: "Stanford Language Data and Reasoning Lab",
+    tags: ["Research", "Recommender Systems"],
+    location: "Stanford, CA",
+    title: "Graduate Research Assistant",
+    duration: "October 2025-April 2026",
+    description: [
+      "• Built a recommendation system utilizing knowledge graphs",
+      "• Developed advanced evaluation techniques for an AI retail assistant through LLM-simulated user dialogue"
+    ]
+  },
   {
     company: "Verkada",
     location: "San Mateo, CA",
     title: "Software Engineer Intern",
     duration: "June-September 2025",
     description: [
-      "• Built a voice agent that leverages realtime LLMs for speech-to-speech capabilities using twilio, temporal, golang and openai APIs"
+      "• Built a voice agent on the Alarms Response team that leverages realtime LLMs for speech-to-speech capabilities using twilio, temporal, golang and openai APIs",
+      "• Created an automated workflow for Alarm License Certificate generation using Temporal"
     ]
   },
   {
     company: "Bioinformatics Institute, A*STAR",
+    tags: ["Bioinformatics", "Digital Pathology"],
     location: "Singapore",
     title: "SIPGA Internship Awardee",
     duration: "June-September 2024",
     description: [
-      "• Developed a Next.js web app from scratch integrating a tissue segmentation AI model with a custom visualization tool",
+      "• Developed a Next.js web app from scratch integrating an H&E histopathology tissue segmentation AI model for cancer cell detection with a custom visualization tool",
       "• Integrated AWS services (Amplify, DynamoDB, S3, SageMaker) to manage hosting, the ML pipeline, and backend database operations"
     ]
   },
@@ -66,6 +87,7 @@ export const experienceData = [
   },
   {
     company: "OXOS Medical",
+    tags: ["Medical Devices", "Computer Vision"],
     location: "Atlanta, GA",
     title: "Software Engineer Intern",
     duration: "June-August 2022",
@@ -78,7 +100,7 @@ export const experienceData = [
 ];
 
 export const skillsData = {
-  languages: ['Java', 'JavaScript', 'C', 'C++', 'Python', 'TypeScript', 'Golang'],
-  tools: ['React.js', 'AWS', 'Next.js', 'Node.js', 'MySQL', 'Git', 'TensorFlow', 'Twilio', 'Temporal', 'OpenAI Apis'],
+  languages: ['Python', 'C++', 'C', 'Java', 'TypeScript', 'JavaScript', 'Go'],
+  tools: ['PyTorch', 'TensorFlow', 'AWS', 'Git', 'Temporal', 'React.js', 'Next.js', 'Node.js', 'MySQL', 'Twilio', 'OpenAI APIs', 'ElevenLabs', 'Claude', 'Codex', 'Cursor', 'Devin'],
   spoken: ['English (Native)', 'Mandarin Chinese (Intermediate)']
 };

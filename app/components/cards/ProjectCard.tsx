@@ -12,39 +12,38 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, type, date, link, image, technologies, description }: ProjectCardProps) => {
   return (
-    <div className="glass rounded-xl overflow-hidden card-hover">
-      <div className="relative h-48 overflow-hidden">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="panel card-hover group flex h-full flex-col overflow-hidden"
+    >
+      <div className="relative h-48 overflow-hidden bg-white">
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent" />
       </div>
-      <div className="p-6">
-        <div className="flex justify-between items-start mb-4">
-          <h3 className="text-2xl font-bold text-text-primary">{title}</h3>
-          <span className="text-secondary text-sm">{type}</span>
+      <div className="flex flex-1 flex-col p-6">
+        <div className="mb-2 flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] uppercase tracking-wider">
+          <span className="text-teal">{type}</span>
+          <span className="text-muted">{date}</span>
         </div>
-        <p className="text-text-secondary text-sm mb-4">{date}</p>
-        <p className="text-text-secondary mb-6 leading-relaxed">{description}</p>
-        <div className="flex flex-wrap gap-2 mb-4">
+        <h3 className="font-display text-xl font-semibold text-ink">{title}</h3>
+        <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{description}</p>
+        <div className="mt-5 flex flex-wrap gap-2">
           {technologies.map((tech) => (
-            <span key={tech} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm border border-primary/20">
-              {tech}
-            </span>
+            <span key={tech} className="chip">{tech}</span>
           ))}
         </div>
-        <a 
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-primary hover:text-secondary transition-colors duration-300"
-        >
-          View Project →
-        </a>
+        <span className="mt-5 inline-flex items-center text-sm text-ink transition-colors group-hover:text-teal">
+          View Project <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+        </span>
       </div>
-    </div>
+    </a>
   );
 };
 

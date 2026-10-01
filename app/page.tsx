@@ -7,12 +7,11 @@
  * 
  * @created 2024-08-11
  * 
- * @version 3.0.0
+ * @version 4.0.0
 */
 
-'use client';
-
 import HomeSection from './components/sections/HomeSection';
+import AboutSection from './components/sections/AboutSection';
 import ResumeSection from './components/sections/ResumeSection';
 import ProjectsSection from './components/sections/ProjectsSection';
 
@@ -20,6 +19,7 @@ export default function Home() {
   return (
     <div className="relative">
       <HomeSection />
+      <AboutSection />
       <ResumeSection />
       <ProjectsSection />
     </div>
