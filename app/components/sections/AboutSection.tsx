@@ -32,7 +32,7 @@ const AboutSection = () => {
           <div>
             <Reveal>
               <p className="max-w-3xl text-lg leading-relaxed text-muted">
-                I studied Computer Science at Stanford on the <span className="text-ink">Biomedical Computation</span> track
+                I studied Computer Science at Stanford on the <span className="text-ink">Computational Biology</span> track
                 for my BS and the <span className="text-ink">Artificial Intelligence</span> track for my MS. I&apos;ve built
                 computer vision models for an X-ray device, tissue segmentation tooling for digital pathology, and
                 production LLM voice agents. I am building a career improving public health. These are my core areas

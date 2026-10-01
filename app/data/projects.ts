@@ -1,5 +1,14 @@
 export const projectsData = [
   {
+    title: "Offline RL for Prior Authorization",
+    type: "Healthcare and RL",
+    date: "2026",
+    link: "https://arxiv.org/abs/2604.05125",
+    image: "/images/prior-auth-placeholder.svg",
+    technologies: ['Python', 'PyTorch'],
+    description: "Modeled insurance policy retrieval for prior authorization as an MDP. The CQL agent reached 92% decision accuracy (+30 pts over the best fixed-K baseline), while IQL matched baseline accuracy with 44% fewer retrieval steps."
+  },
+  {
     title: "GridFlow",
     type: "RL and CV",
     date: "January-March 2025",

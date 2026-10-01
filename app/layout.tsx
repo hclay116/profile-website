@@ -23,7 +23,7 @@ const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
   title: "Hannah Clay - Software Engineer",
-  description: "AI Engineer working at the intersection of machine learning and medicine. Stanford CS (Biomedical Computation, AI).",
+  description: "AI Engineer working at the intersection of machine learning and medicine. Stanford CS (Computational Biology, AI).",
 };
 
 export default function RootLayout({

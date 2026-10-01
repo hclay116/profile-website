@@ -32,7 +32,7 @@ const HomeSection = () => {
             </h1>
 
             <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted lg:mx-0">
-              I&apos;m an AI Engineer at Zingage and a Stanford Computer Science grad (BS Biomedical Computation, MS AI).
+              I&apos;m an AI Engineer at Zingage and a Stanford Computer Science grad (BS Computational Biology, MS AI).
               I have experience in AI and full-stack engineering,
               but my passion lies in the intersection of AI and medicine.
             </p>
@@ -49,7 +49,7 @@ const HomeSection = () => {
             <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-line pt-6 text-left">
               {[
                 ['BS + MS', 'Stanford CS'],
-                ['Bio + AI', 'Biomedical Computation · AI tracks'],
+                ['Bio + AI', 'Computational Biology · AI tracks'],
                 ['7', 'industry & research roles'],
               ].map(([value, label]) => (
                 <div key={label}>

@@ -4,7 +4,7 @@ export const educationData = [
     location: "Stanford, CA",
     degrees: [
       "Master of Science, Computer Science (Artificial Intelligence Track)",
-      "Bachelor of Science, Computer Science (Biomedical Computation Track)"
+      "Bachelor of Science, Computer Science (Computational Biology Track)"
     ],
     dates: ["June 2026", "June 2025"],
     details: [
@@ -100,7 +100,7 @@ export const experienceData: Array<{
 ];
 
 export const skillsData = {
-  languages: ['Python', 'TypeScript', 'JavaScript', 'Java', 'C', 'C++', 'Golang'],
-  tools: ['PyTorch', 'TensorFlow', 'React.js', 'Next.js', 'Node.js', 'AWS', 'MySQL', 'Git', 'Temporal', 'Twilio', 'OpenAI APIs', 'ElevenLabs', 'Claude', 'Codex', 'Cursor', 'Devin'],
+  languages: ['Python', 'C++', 'C', 'Java', 'TypeScript', 'JavaScript', 'Go'],
+  tools: ['PyTorch', 'TensorFlow', 'AWS', 'Git', 'Temporal', 'React.js', 'Next.js', 'Node.js', 'MySQL', 'Twilio', 'OpenAI APIs', 'ElevenLabs', 'Claude', 'Codex', 'Cursor', 'Devin'],
   spoken: ['English (Native)', 'Mandarin Chinese (Intermediate)']
 };
