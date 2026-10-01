@@ -8,7 +8,8 @@ export const educationData = [
     ],
     dates: ["June 2026", "June 2025"],
     details: [
-      "Coursework: Mining Massive Datasets, AI: Principles and Techniques, NLP with Deep Learning, Deep Learning for Computer Vision, Continuous Mathematical Methods with an Emphasis on Machine Learning"
+      "Bio/Health Coursework: Representations & Algorithms for Computational Molecular Biology, Biodesign Fundamentals, Large-Scale Neural Network Modeling for Neuroscience",
+      "AI/ML Coursework: Mining Massive Datasets, AI: Principles and Techniques, NLP with Deep Learning, Deep Learning for Computer Vision, Reinforcement Learning, Continuous Mathematical Methods with an Emphasis on Machine Learning"
     ]
   }
 ];
@@ -28,17 +29,19 @@ export const experienceData: Array<{
     title: "AI Engineer",
     duration: "June 2026-Present",
     description: [
-      "• Co-developing core product AI agents, including voice and ranking/recommendation systems for home care"
+      "• Co-developing core product AI agents, including voice and ranking/recommendation systems for home care",
+      "• Building an in-house audio evaluation set for voice AI agents",
+      "• Owning the rollout of a new ranking/recommendation system, from design iterations and shadow runs to A/B testing and full rollout"
     ]
   },
   {
     company: "Stanford Language Data and Reasoning Lab",
-    tags: ["Research", "Knowledge Graphs"],
+    tags: ["Research", "Recommender Systems"],
     location: "Stanford, CA",
     title: "Graduate Research Assistant",
     duration: "October 2025-April 2026",
     description: [
-      "• Built an advanced recommendation system utilizing knowledge graphs",
+      "• Built a recommendation system utilizing knowledge graphs",
       "• Developed advanced evaluation techniques for an AI retail assistant through LLM-simulated user dialogue"
     ]
   },
@@ -59,7 +62,7 @@ export const experienceData: Array<{
     title: "SIPGA Internship Awardee",
     duration: "June-September 2024",
     description: [
-      "• Developed a Next.js web app from scratch integrating a tissue segmentation AI model with a custom visualization tool",
+      "• Developed a Next.js web app from scratch integrating an H&E histopathology tissue segmentation AI model for cancer cell detection with a custom visualization tool",
       "• Integrated AWS services (Amplify, DynamoDB, S3, SageMaker) to manage hosting, the ML pipeline, and backend database operations"
     ]
   },

@@ -1,5 +1,6 @@
 import EducationCard from '../cards/EducationCard';
 import ExperienceCard from '../cards/ExperienceCard';
+import PublicationsSection from './PublicationsSection';
 import Reveal from '../ui/Reveal';
 import SectionHeader from '../ui/SectionHeader';
 import { educationData, experienceData, skillsData } from '../../data/resume';
@@ -35,10 +36,12 @@ const ResumeSection = () => {
         </div>
       </section>
 
+      <PublicationsSection />
+
       <section id="resume" className="py-24">
         <div className="container mx-auto max-w-6xl px-6">
           <Reveal>
-            <SectionHeader index="03" label="Education & Skills" title="Education & Skills" />
+            <SectionHeader index="04" label="Education & Skills" title="Education & Skills" />
           </Reveal>
 
           <div className="grid gap-6">
