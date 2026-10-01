@@ -29,7 +29,6 @@ export const experienceData: Array<{
     title: "AI Engineer",
     duration: "June 2026-Present",
     description: [
-      "• Co-developing core product AI agents, including voice and ranking/recommendation systems for home care",
       "• Building an in-house audio evaluation set for voice AI agents",
       "• Owning the rollout of a new ranking/recommendation system, from design iterations and shadow runs to A/B testing and full rollout"
     ]
