@@ -3,4 +3,5 @@ node_modules
 .env
 .next
 public/.DS_Store
-.DS_Store*.tsbuildinfo
+.DS_Store
+*.tsbuildinfo
