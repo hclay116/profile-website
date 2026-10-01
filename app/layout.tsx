@@ -20,7 +20,7 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hannah Clay - Software Engineer",
+  title: "Hannah Clay - AI Engineer",
   description: "Software Engineer specializing in computer vision, machine learning, and full-stack development",
 };
 

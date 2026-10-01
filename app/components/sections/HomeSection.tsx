@@ -28,11 +28,11 @@ const HomeSection = () => {
               <span className="gradient-text">Hi. I'm Hannah.</span>
             </h1>
             <h2 className="text-2xl lg:text-3xl text-secondary mb-6 font-light">
-              Software Engineer
+              AI Engineer
             </h2>
             <p className="text-lg text-text-secondary max-w-2xl mb-8 leading-relaxed">
-            I'm a coterm student at Stanford studying Computer Science. 
-            I have experience in AI and full-stack engineering, 
+            I'm an AI Engineer at Zingage and a Stanford Computer Science grad (BS Biomedical Computation, MS AI).
+            I have experience in AI and full-stack engineering,
             but my passion lies in the intersection of AI and medicine.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
